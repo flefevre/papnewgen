@@ -1,0 +1,208 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.papnewgen</groupId>
+        <artifactId>papnewgen</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>papnewgen-app</artifactId>
+    <packaging>ear</packaging>
+    <name>PapNewGen Application</name>
+    <dependencies>
+        <!-- If deploying both web and webservice wars, common files can be excluded from war artifacts and referenced as dependencies here -->
+        <!--dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>papnewgen-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>papnewgen-core</artifactId>
+            <version>${project.version}</version>
+            <type>ejb</type>
+        </dependency-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>papnewgen-web</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>papnewgen-webservice</artifactId>
+            <version>${project.version}</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.tonicsystems</groupId>
+            <artifactId>jarjar</artifactId>
+            <version>0.6</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <finalName>${application.id}-${project.version}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/config</directory>
+                <targetPath>../</targetPath>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/application</directory>
+                <targetPath>../${application.id}-${project.version}</targetPath>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>${maven-ear-plugin.version}</version>
+                <configuration>
+                    <generateApplicationXml>true</generateApplicationXml>
+                    <includeJar>false</includeJar>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <includes>**/*.xml</includes>
+                    <excludes>**/jboss-app.xml</excludes>
+                    <version>5</version>
+                    <archive>
+                        <manifest>
+                          <addClasspath>true</addClasspath>
+                          <useUniqueVersions>false</useUniqueVersions>
+                          <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                          <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                        </manifest>
+                        <manifestEntries>
+                          <Implementation-Build>${maven.build.timestamp}</Implementation-Build>
+                          <url>${project.url}</url>
+                        </manifestEntries>
+                    </archive>
+                    <modules>
+                        <webModule>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>papnewgen-web</artifactId>
+                            <contextRoot>/${application.id}</contextRoot>
+                        </webModule>
+                        <webModule>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>${project.parent.artifactId}-webservice</artifactId>
+                            <contextRoot>/${project.parent.artifactId}-webservice</contextRoot>
+                        </webModule>
+                    </modules>
+                    <jboss>
+                        <version>5</version>
+                        <loader-repository>${project.groupId}:loader=${project.build.finalName}</loader-repository>
+                        <loader-repository-config>java2ParentDelegation=false</loader-repository-config>
+                    </jboss>
+                </configuration>
+            </plugin>
+            <!-- remove the 'javax.xml.namespace.QName' class from any jar that bundles it,
+                 it causes classloading issues with containers that already have it -->
+            <!-- Commented out because these dependencies should only be bundled with the war, not the ear
+            plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>${maven-antrun-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>remove problem classes</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <property name="dependencyClasspath" refid="maven.compile.classpath"/>
+                                <taskdef name="jarjar" classname="com.tonicsystems.jarjar.JarJarTask" classpath="${dependencyClasspath}"/>
+                                <copy file="${project.basedir}/target/${project.parent.artifactId}-${project.version}/lib/axis2-1.2.jar"
+                                    tofile="${project.basedir}/target/jarjar/axis2-1.2.jar" failonerror="false"/>
+                                <jarjar jarfile="${project.basedir}/target/${project.parent.artifactId}-${project.version}/axis2-1.2.jar">
+                                    <zipfileset src="${project.basedir}/target/jarjar/axis2-1.2.jar"/>
+                                    <zap pattern="javax.xml.namespace.QName"/>
+                                </jarjar>
+                                <copy file="${project.basedir}/target/${project.parent.artifactId}-${project.version}/lib/stax-api-1.0.1.jar"
+                                    tofile="${project.basedir}/target/jarjar/stax-api-1.0.1.jar" failonerror="false"/>
+                                <jarjar jarfile="${project.basedir}/target/${project.parent.artifactId}-${project.version}/stax-api-1.0.1.jar">
+                                    <zipfileset src="${project.basedir}/target/jarjar/stax-api-1.0.1.jar"/>
+                                    <zap pattern="javax.xml.namespace.QName"/>
+                                </jarjar>
+                                <copy file="${project.basedir}/target/${project.parent.artifactId}-${project.version}/lib/woden-impl-om-1.0M8.jar"
+                                    tofile="${project.basedir}/target/jarjar/woden-impl-om-1.0M8.jar" failonerror="false"/>
+                                <jarjar jarfile="${project.basedir}/target/${project.parent.artifactId}-${project.version}/woden-impl-om-1.0M8.jar">
+                                    <zipfileset src="${project.basedir}/target/jarjar/woden-impl-om-1.0M8.jar"/>
+                                    <zap pattern="javax.xml.namespace.QName"/>
+                                </jarjar>
+                                <zip destfile="${project.basedir}/target/${project.parent.artifactId}-${project.version}.ear"
+                                     basedir="${project.basedir}/target/${project.parent.artifactId}-${project.version}" update="true" />
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin-->
+            <plugin>
+                <groupId>org.andromda.maven.plugins</groupId>
+                <artifactId>andromdapp-maven-plugin</artifactId>
+                <version>${andromda.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <deployLocation>${jboss.home}/server/default/deploy</deployLocation>
+                    <!-- include the generated data source file -->
+                    <includes>
+                        <include>*ds.xml</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <!-- This profile here will allow you to specify -Ddeploy=link in order deploy an exploded ear using symbolic links,
+             this allows you to easily edit things like jsp, xhtml, etc and just build the web module without having
+             to deploy the ear -->
+        <profile>
+            <id>link</id>
+            <activation>
+                <property>
+                    <name>deploy</name>
+                    <value>link</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.andromda.maven.plugins</groupId>
+                        <artifactId>andromdapp-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>link</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <deployLocation>${jboss.home}/server/default/deploy</deployLocation>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

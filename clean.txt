@@ -1,0 +1,16 @@
+CompilerOracle: exclude org/apache/velocity/runtime/directive/Foreach.render
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.094s
+[INFO] Finished at: Thu Jan 16 10:38:10 EST 2014
+[INFO] Final Memory: 13M/493M
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (C:\Workspaces\A34\andromda35\andromda-andromdapp\projects\j2ee\maven2\src\main\resources\templates\j2ee\maven2). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
