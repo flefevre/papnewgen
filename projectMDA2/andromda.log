@@ -1,0 +1,148 @@
+2017-06-29 15:51:19,137 INFO  [AndroMDA] - discovering namespaces -
+2017-06-29 15:51:19,276 INFO  [AndroMDA] found namespace --> 'ejb3'
+2017-06-29 15:51:19,276 INFO  [AndroMDA]   +  registering component 'cartridge'
+2017-06-29 15:51:19,398 INFO  [AndroMDA]   +  registering component 'metafacades'
+2017-06-29 15:51:19,466 INFO  [AndroMDA]   +  registering component 'profile'
+2017-06-29 15:51:19,486 INFO  [AndroMDA] found namespace --> 'emf-uml22'
+2017-06-29 15:51:19,486 INFO  [AndroMDA]   +  registering component 'metafacades'
+2017-06-29 15:51:19,573 INFO  [AndroMDA]   +  registering component 'profile'
+2017-06-29 15:51:19,578 INFO  [AndroMDA]   +  registering component 'repository'
+2017-06-29 15:51:19,642 INFO  [AndroMDA] found namespace --> 'java'
+2017-06-29 15:51:19,642 INFO  [AndroMDA]   +  registering component 'cartridge'
+2017-06-29 15:51:19,651 INFO  [AndroMDA]   +  registering component 'profile'
+2017-06-29 15:51:19,653 INFO  [AndroMDA]   +  registering component 'metafacades'
+2017-06-29 15:51:19,658 INFO  [AndroMDA] found namespace --> 'netBeansMDR'
+2017-06-29 15:51:19,658 INFO  [AndroMDA]   +  registering component 'repository'
+2017-06-29 15:51:19,703 INFO  [AndroMDA] found namespace --> 'uml-1.4'
+2017-06-29 15:51:19,703 INFO  [AndroMDA]   +  registering component 'metafacades'
+2017-06-29 15:51:19,772 INFO  [AndroMDA]   +  registering component 'profile'
+2017-06-29 15:51:19,778 INFO  [AndroMDA] found namespace --> 'validation'
+2017-06-29 15:51:19,778 INFO  [AndroMDA]   +  registering component 'translation-library'
+2017-06-29 15:51:21,314 INFO  [AndroMDA] - core initialization complete: 2.399[s] -
+2017-06-29 15:51:21,342 INFO  [AndroMDA] loading model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/papnewgo2.uml'
+2017-06-29 15:51:21,368 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/papnewgo2.uml' 
+2017-06-29 15:51:21,531 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-persistence-3.5-SNAPSHOT.profile.uml' 
+2017-06-29 15:51:21,816 INFO  [AndroMDA] referenced model --> 'jar:file:/volatile/home/fl218080/.m2/repository/org/eclipse/uml2/uml/resources/5.0.0-v20140602-0749/resources-5.0.0-v20140602-0749.jar!/profiles/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w' 
+2017-06-29 15:51:21,828 INFO  [AndroMDA] referenced model --> 'jar:file:/volatile/home/fl218080/.m2/repository/org/eclipse/uml2/uml/resources/5.0.0-v20140602-0749/resources-5.0.0-v20140602-0749.jar!/profiles/Standard.profile.uml#_0' 
+2017-06-29 15:51:21,839 INFO  [AndroMDA] referenced model --> 'jar:file:/volatile/home/fl218080/.m2/repository/org/eclipse/uml2/uml/resources/5.0.0-v20140602-0749/resources-5.0.0-v20140602-0749.jar!/profiles/Standard.profile.uml' 
+2017-06-29 15:51:21,911 INFO  [AndroMDA] referenced model --> 'jar:file:/volatile/home/fl218080/.m2/repository/org/eclipse/uml2/uml/resources/5.0.0-v20140602-0749/resources-5.0.0-v20140602-0749.jar!/profiles/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA' 
+2017-06-29 15:51:21,917 INFO  [AndroMDA] referenced model --> 'jar:file:/volatile/home/fl218080/.m2/repository/org/eclipse/uml2/uml/resources/5.0.0-v20140602-0749/resources-5.0.0-v20140602-0749.jar!/profiles/Ecore.profile.uml#_0' 
+2017-06-29 15:51:21,928 INFO  [AndroMDA] referenced model --> 'jar:file:/volatile/home/fl218080/.m2/repository/org/eclipse/uml2/uml/resources/5.0.0-v20140602-0749/resources-5.0.0-v20140602-0749.jar!/profiles/Ecore.profile.uml' 
+2017-06-29 15:51:22,144 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-meta-3.5-SNAPSHOT.profile.uml/' 
+2017-06-29 15:51:22,163 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-datatype-3.5-SNAPSHOT.uml' 
+2017-06-29 15:51:22,213 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-common-3.5-SNAPSHOT.profile.uml' 
+2017-06-29 15:51:22,303 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-presentation-3.5-SNAPSHOT.profile.uml' 
+2017-06-29 15:51:22,360 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-process-3.5-SNAPSHOT.profile.uml' 
+2017-06-29 15:51:22,411 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-service-3.5-SNAPSHOT.profile.uml' 
+2017-06-29 15:51:22,450 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-webservice-3.5-SNAPSHOT.profile.uml' 
+2017-06-29 15:51:22,493 INFO  [AndroMDA] referenced model --> 'file:/volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/andromda-xml-3.5-SNAPSHOT.profile.uml' 
+2017-06-29 15:51:22,522 INFO  [AndroMDA] - loading complete: 1.203[s] -
+2017-06-29 15:51:22,523 INFO  [AndroMDA] - validating model -
+2017-06-29 15:51:23,323 INFO  [AndroMDA] - validation complete: 0.8[s] -
+2017-06-29 15:51:23,445 INFO  [AndroMDA] Processing cartridge ejb3 on model /volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/papnewgo2.uml
+2017-06-29 15:51:23,459 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/EntityCreate.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,539 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/src/test/java/org/papnewgo2/dm/ProjectCreate.java'
+2017-06-29 15:51:23,539 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/JPAJUnitAncestor.java.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,541 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/H2.java.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,550 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/persistence.xml.vsl with 1 metafacades from 3 model elements
+2017-06-29 15:51:23,559 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/persistence.xml.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,561 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/reveng.xml.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,572 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DAOFactory.java.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,577 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/log4j.xml.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,579 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/persistence.xml.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,580 WARN  [org.andromda.core.configuration.Namespaces] WARNING! Namespaces 'default' and 'ejb3' have no property 'test-refs' defined --> please define this property in AT LEAST ONE of these two namespaces.  If you want to 'ignore' this message, add the property to the namespace with ignore set to 'true'
+2017-06-29 15:51:23,580 WARN  [org.andromda.core.cartridge.Cartridge] Template outlet location 'test-refs' is not defined in namespace ejb3
+2017-06-29 15:51:23,580 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/EntityTest.java.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,595 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/EntityEmbeddable.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,687 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/target/src/main/java/org/papnewgo2/dm/Project.java'
+2017-06-29 15:51:23,687 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/Entity.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,687 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/Entity.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/EntityListener.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/EntityListener.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/EntityCompositePK.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionBeanBase.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionInterface.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionLocal.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionRemote.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,688 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionBeanImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionBeanImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionListener.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/SessionListener.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/ServiceDelegate.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/ServiceDelegateBase.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/ServiceLocator.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/WebServiceInterface.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DefaultServiceException.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,689 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DaoLocal.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,724 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/target/src/main/java/org/papnewgo2/dm/ProjectDao.java'
+2017-06-29 15:51:23,724 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DaoBase.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,813 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/target/src/main/java/org/papnewgo2/dm/ProjectDaoBase.java'
+2017-06-29 15:51:23,814 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DaoImpl.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,820 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/target/src/main/java/org/papnewgo2/dm/ProjectDaoImpl.java'
+2017-06-29 15:51:23,820 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DaoImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,821 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DaoImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,821 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/DaoDefaultException.vsl with 1 metafacades from 1 model elements
+2017-06-29 15:51:23,833 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../common/target/src/main/java/org/papnewgo2/dm/ProjectDaoException.java'
+2017-06-29 15:51:23,833 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/orm.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,833 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/ejb-jar.xml.vsl with 1 metafacades from 5 model elements
+2017-06-29 15:51:23,841 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/target/src/main/java/META-INF/ejb-jar.xml'
+2017-06-29 15:51:23,841 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/jboss.xml.vsl with 1 metafacades from 4 model elements
+2017-06-29 15:51:23,843 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/target/src/main/java/META-INF/jboss.xml'
+2017-06-29 15:51:23,843 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/components.xml.vsl with 1 metafacades from 3 model elements
+2017-06-29 15:51:23,848 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/target/src/main/java/META-INF/components.xml'
+2017-06-29 15:51:23,849 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/login-config.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,849 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/login-service.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,849 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/jboss-app.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,849 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/auth.conf.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,849 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/ejb3-entity-cache-service.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,849 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/config/jboss/mq-destinations-service.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/MessageDrivenBean.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/MessageDrivenBeanImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/MessageDrivenBeanImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/MessageDrivenListener.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/MessageDrivenListener.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/Interceptor.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/Interceptor.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,850 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/Enumeration.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/EmbeddedValue.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/EmbeddedValueImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/EmbeddedValueImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/crud/ManageableServiceLocator.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/crud/ManageableServiceRemote.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/crud/ManageableServiceBase.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/crud/ManageableServiceCreateException.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/crud/ManageableServiceReadException.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,851 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/crud/ManageableServiceUpdateException.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,852 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/crud/ManageableServiceDeleteException.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,852 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/testng.xml.vsl with 1 metafacades from 3 model elements
+2017-06-29 15:51:23,856 INFO  [AndroMDA:ejb3] Output: 'file:/volatile/gits/papnewgen/projectMDA2/mda/../core/src/test/resources/testng.xml'
+2017-06-29 15:51:23,856 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/testjms.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,856 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/EJB3Container.vsl with 0 metafacades from 2 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/EJB3Container.vsl with 0 metafacades from 2 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/SessionTest.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/SessionTest.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/MessageDrivenTest.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/test/MessageDrivenTest.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/default.persistence.properties.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/ejb3-interceptors-aop.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/embedded-jboss-beans.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/jboss-jms-beans.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,857 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/jndi.properties.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,858 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/log4j.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,858 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/log4j.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,858 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/login-config.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,858 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/security-beans.xml.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,858 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/roles.properties.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,858 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/ejb3/microcontainer/users.properties.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,862 INFO  [AndroMDA] Processing cartridge java on model /volatile/gits/papnewgen/projectMDA2/mda/src/main/uml/papnewgo2.uml
+2017-06-29 15:51:23,862 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/Service.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,862 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/ServiceImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,862 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/ServiceImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,863 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/ValueObject.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,863 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/ApplicationException.vsl with 0 metafacades from 2 model elements
+2017-06-29 15:51:23,863 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/UnexpectedException.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,863 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/Enumeration.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,863 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/TypeSafeEnumeration.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,864 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/Interface.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,864 INFO  [org.andromda.core.cartridge.Cartridge] Processing templates/java/InterfaceImpl.vsl with 0 metafacades from 1 model elements
+2017-06-29 15:51:23,865 INFO  [AndroMDA] completed model processing --> TIME: 2.55[s], RESOURCES WRITTEN: 10

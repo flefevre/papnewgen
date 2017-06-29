@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mMn4sFzHEeeJE9sAJRFJLQ" type="PapyrusUMLClassDiagram" name="NewClassDiagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_wPV60FzHEeeJE9sAJRFJLQ" type="Class_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wPaMQFzHEeeJE9sAJRFJLQ" type="Class_NameLabel"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_wPaMQVzHEeeJE9sAJRFJLQ" type="Class_FloatingNameLabel">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wPaMQlzHEeeJE9sAJRFJLQ" y="15"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_wPazUFzHEeeJE9sAJRFJLQ" type="Class_AttributeCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_3I6asFzHEeeJE9sAJRFJLQ" type="Property_ClassAttributeLabel">
+        <element xmi:type="uml:Property" href="papnewgo2.uml#_1FP50FzHEeeJE9sAJRFJLQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3I6asVzHEeeJE9sAJRFJLQ"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_wPazUVzHEeeJE9sAJRFJLQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_wPazUlzHEeeJE9sAJRFJLQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_wPazU1zHEeeJE9sAJRFJLQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wPazVFzHEeeJE9sAJRFJLQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_wPazVVzHEeeJE9sAJRFJLQ" type="Class_OperationCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_wPazVlzHEeeJE9sAJRFJLQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_wPazV1zHEeeJE9sAJRFJLQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_wPazWFzHEeeJE9sAJRFJLQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wPazWVzHEeeJE9sAJRFJLQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_wPazWlzHEeeJE9sAJRFJLQ" type="Class_NestedClassifierCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_wPazW1zHEeeJE9sAJRFJLQ"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_wPazXFzHEeeJE9sAJRFJLQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_wPazXVzHEeeJE9sAJRFJLQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wPazXlzHEeeJE9sAJRFJLQ"/>
+    </children>
+    <element xmi:type="uml:Class" href="papnewgo2.uml#_tqJaMFzHEeeJE9sAJRFJLQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wPV60VzHEeeJE9sAJRFJLQ" x="260" y="200"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_yJ_CkFzHEeeJE9sAJRFJLQ" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_yJ_CkVzHEeeJE9sAJRFJLQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_yJ_Ck1zHEeeJE9sAJRFJLQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="papnewgo2.uml#_tqJaMFzHEeeJE9sAJRFJLQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yJ_CklzHEeeJE9sAJRFJLQ" x="460" y="200"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_mMn4sVzHEeeJE9sAJRFJLQ" name="diagram_compatibility_version" stringValue="1.3.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_mMn4slzHEeeJE9sAJRFJLQ"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_mMn4s1zHEeeJE9sAJRFJLQ" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Package" href="papnewgo2.uml#_i6DUsFzHEeeJE9sAJRFJLQ"/>
+  </styles>
+  <element xmi:type="uml:Package" href="papnewgo2.uml#_i6DUsFzHEeeJE9sAJRFJLQ"/>
+  <edges xmi:type="notation:Connector" xmi:id="_yKAQsFzHEeeJE9sAJRFJLQ" type="StereotypeCommentLink" source="_wPV60FzHEeeJE9sAJRFJLQ" target="_yJ_CkFzHEeeJE9sAJRFJLQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_yKAQsVzHEeeJE9sAJRFJLQ"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_yKA3wVzHEeeJE9sAJRFJLQ" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Class" href="papnewgo2.uml#_tqJaMFzHEeeJE9sAJRFJLQ"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yKAQslzHEeeJE9sAJRFJLQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yKAQs1zHEeeJE9sAJRFJLQ"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yKA3wFzHEeeJE9sAJRFJLQ"/>
+  </edges>
+</notation:Diagram>
